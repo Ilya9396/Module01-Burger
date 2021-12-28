@@ -140,4 +140,8 @@ header {
 }
 .banner-box{
     background-image: url(../image/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 142px 0;
+    margin-bottom: 140px;
 }
