@@ -18,6 +18,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo {
     display: block;
     background-image: url(../image/logo.svg);
@@ -144,7 +150,8 @@ header {
     background-size: cover;
     background-position: center center;
     padding: 100px 100px 120px;
-    margin-bottom: 100px;
+    padding-top: 98px;
+    margin-bottom: 80px;
     
 }
 .banner-title {
@@ -172,30 +179,38 @@ header {
     color:#FAF9F9;
     font-size: 15px;
     line-height: 1.6;
-    font-family:'Open Sans', sans-serif;;
+    font-family:'Open Sans', sans-serif;
     max-width: 353px;
     margin-top: 0;
     margin-bottom: 35px;
 }
 .banner-link {
     font-size: 14px;
-    padding: 20px 27px;
+    padding: 18px 25px;
     text-transform: uppercase;
     text-decoration: none;
     color: #1E2F40;
     background-color: #FBB731;
     border-radius: 5px;
+    border: 1px solid#FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
 }
 .menu-title {
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
     color: #1B2A49;
+    
 }
 .menu-select {
     border: 1px solid #DEDEDE;
@@ -207,7 +222,7 @@ header {
     flex-basis: 279px;
     background-image: url(../image/arrow.svg);
     background-size: 12.79px 7.75px;
-    c
+    background-repeat: no-repeat;
     background-position: 89% center;
 }
 .menu-grid {
@@ -232,37 +247,131 @@ header {
 }
 .menu-grid-title {
     color: #1B2A49;
-    font-family: 'Nunito Sans', sans-serif;
     text-align: center;
     font-size: 30px;
-    line-height: 38px;
-    font-style: normal;
     font-weight: 600;
+    margin: 0;
+    margin-top: 24px;
 }
 .menu-grid-price {
-    text-align: center;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    text-align: center;
+    color: #979797;
+    margin: 0px;
+    margin-top: 10px;
 }
 .menu-grid-btn {
-    color: #1E2F40;
     background-color: #FBB731;
     border-radius: 5px;
-    width: 152px;
-    height: 38px;
+    padding: 10px 32px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 9px;
+    cursor: pointer;   
+}
+.menu-grid-btn:hover {
+   background-color: #F37335; 
+}
+.menu-grid-text {
+    font-size: 14px;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
-    background-image: url(../image/cart-jpg.jpg);
-    background-repeat: no-repeat;
- 
+    color: #1E2F40;
+    font-weight: 700;
 }
 .menu-grid-price {
     color:#979797;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     text-align: center;
 }
+.menu-grid-icon {
+    display: block;
+    background-image: url(../image/cart.svg)
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px
+}
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 140px;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {
+    flex: 0 0 auto; 
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 19;
+    margin-top: 0;
+}
+.footer-list li {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-list a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-list a:hover {
+    color: #FBB731;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel a {
+    font-size: 20px;
+    color: #FBB731;
+    font-weight: 900;
+}
+.footer-list-tel a:hover {
+    color: #fff;
+}
+.footer-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
   
