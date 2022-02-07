@@ -74,7 +74,7 @@ header {
 .button-count{
     font-weight: 700;
     font-size: 13px;
-    color: #443737;
+    color: #fff;
     background: #F37335;
     border-radius: 100%;
     position: absolute;
@@ -202,7 +202,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 35px;  
+    margin-bottom: 35px;  
      
 }
 .menu-title {
@@ -226,6 +226,7 @@ header {
     background-size: 12.79px 7.75px;
     background-repeat: no-repeat;
     background-position: 89% center;
+    background-color: #FFFFFF;
 }
 .menu-grid {
     display: grid;
@@ -661,6 +662,36 @@ header {
     }
    
 }
+@media (max-width: 650px) {
+    .footer-box {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-template-areas:
+        "logo tel"
+        "link link"
+        "info info";
+        gap: 30px;
+    }
+    .footer-item:nth-child(1) {
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2) {
+        grid-area: link;
+    }
+    .footer-item:nth-child(3) {
+        grid-area: info;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+        text-align: right;
+    }
+    .footer-list-tel a {
+        font-size: 18px;
+    }
+}
 @media (max-width: 567px) {
     .menu-header {
         margin-bottom: 30px;
@@ -706,6 +737,9 @@ header {
         gap: 25px 15px;
         margin-bottom: 40px;
     }
+    .menu-other {
+        gap: 5px;
+    }
     .menu-grid-cover {
         height: 56vw;
     }
@@ -717,7 +751,7 @@ header {
         flex: 0 0 38vw;
     }
     .menu-grid-title {
-        font-size: 15px;
+        font-size: 13px;
     }
     .menu-grid-price {
         font-size: 16px;
@@ -728,40 +762,14 @@ header {
         padding: 10px 21px 10px 28px;
     }
     .menu-other {
-        height: 124vw;
+        height: 109vw;
     }
     .footer {
         margin-top: 28px;
         padding-top: 60px;
     }
-    .footer-box {
-        display: grid;
-        grid-template-columns: 30% 1fr;
-        grid-template-areas:
-        "logo tel"
-        "link link"
-        "info info";
-        gap: 30px;
-    }
-    .footer-item:nth-child(1) {
-        grid-area: logo;
-    }
-    .footer-item:nth-child(2) {
-        grid-area: link;
-    }
-    .footer-item:nth-child(3) {
-        grid-area: info;
-    }
-    .footer-list + .footer-list-tel {
-        display: none;
-    }
-    .footer-tel {
-        display: block;
-        text-align: right;
-    }
-    .footer-list-tel a {
-        font-size: 15px;
-    }
+     
+
   
 }
 @media (max-width: 360px) {
@@ -778,6 +786,9 @@ header {
     .banner-box{
         background-position: 25% center;
         padding: 35px 24px 54px;
+    }
+    .menu-other {
+        height: 122vw
     }
 }
 
