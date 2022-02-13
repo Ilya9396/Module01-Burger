@@ -245,9 +245,12 @@ header {
     position: absolute;
     left: 50%;
     top: 50%;
+    width: 100%;
+    height: 430px;
     transform: translate(-50%, -50%);
     -o-object-fit: cover;
        object-fit: cover;
+
 }
 .menu-grid-title {
     color: #1B2A49;
@@ -742,6 +745,7 @@ header {
     }
     .menu-other .menu-grid-cover img {
         height: 100%;
+        
     }
     .breadcrumbs a {
         font-size: 14px;
@@ -776,7 +780,8 @@ header {
     .menu-other {
         gap: 5px;
     }
-    .menu-grid-cover {
+    .menu-grid-cover,
+    .menu-grid-cover img {
         height: 53vw;
     }
    
