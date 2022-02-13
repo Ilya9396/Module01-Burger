@@ -307,7 +307,7 @@ header {
     color: #fff;
     padding-top: 117px;
     padding-bottom: 106px;
-    margin-top: 143px;
+    margin-top: 40px;
 }
 .footer-box {
     display: flex;
@@ -405,12 +405,14 @@ header {
 /* style INDEX*/ 
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+  
 }
 .wrapper {
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
 }
 .content{
     color: #FAF9F9;
@@ -467,16 +469,21 @@ header {
     display: flex;
     justify-content: flex-end;
     position: relative;
+    right: 86px;
 }
 .visual-bg {
-    width: 432px;
+    width: 410px;
     height: 100%;
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+    
 }
 .main img {
-    width: 829px;
+    width: 610px;
     position: absolute;
-    right: -168px;
+    right: -74px;
+    top: 10%;
+    
+    
 }
 .promo {
     padding-top: 186px;
@@ -591,6 +598,26 @@ header {
 }
 
 @media (max-width: 1000px) {
+    .content {
+        margin-left: 17px;
+    }
+    .content-title span {
+        font-size: 24px;
+    }
+    .content-title {
+        font-size: 86px;
+        line-height: 98px;
+    }
+    .content-text {
+        width: 409px;
+    }
+    .main img {
+        width: 534px;
+        right: -69px;
+    }
+    .visual-bg {
+        width: 366px;
+    }    
     .container {
         max-width: 738px;
     }
@@ -692,6 +719,11 @@ header {
         font-size: 18px;
     }
 }
+@media (max-width: 600px) {
+    .menu-grid-cover {
+        height: 62vw;
+    }
+}
 @media (max-width: 567px) {
     .header {
         padding-top: 19px;
@@ -747,10 +779,7 @@ header {
     .menu-grid-cover {
         height: 53vw;
     }
-    .menu-grid-cover img {
-        height: 100%;
-        margin-bottom: 10px;
-    }
+   
     .menu-other .menu-grid-item {
         flex: 0 0 38vw;
     }
@@ -768,11 +797,12 @@ header {
         padding: 10px 21px 10px 23px;
     }
     .menu-other {
-        height: 109vw;
+        height: 101vw;
     }
     .footer {
         margin-top: 41px;
         padding-top: 60px;
+        
     }
      
 }
@@ -792,7 +822,7 @@ header {
         padding: 35px 24px 54px;
     }
     .menu-other {
-        height: 122vw
+        height: 109vw;
     }
 }
 
