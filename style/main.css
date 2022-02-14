@@ -250,7 +250,7 @@ header {
     transform: translate(-50%, -50%);
     -o-object-fit: cover;
        object-fit: cover;
-
+    
 }
 .menu-grid-title {
     color: #1B2A49;
@@ -663,6 +663,7 @@ header {
     .menu-other .menu-grid-cover,
     .menu-other .menu-grid-cover img {
         height: 320px;
+        
     }
     .footer-tel {
         display: none;
@@ -725,6 +726,9 @@ header {
 @media (max-width: 600px) {
     .menu-grid-cover {
         height: 62vw;
+    }
+    .menu-grid-cover img {
+        height: 372px;
     }
 }
 @media (max-width: 567px) {
