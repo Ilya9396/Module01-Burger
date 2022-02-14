@@ -691,9 +691,14 @@ header {
     .menu-other .container {
         padding-right: 0;
     }
+    
    
 }
 @media (max-width: 650px) {
+    .menu-grid-cover {
+        height: 62vw;
+    }
+    
     .footer-box {
         display: grid;
         grid-template-columns: 30% 1fr;
@@ -723,14 +728,7 @@ header {
         font-size: 18px;
     }
 }
-@media (max-width: 600px) {
-    .menu-grid-cover {
-        height: 62vw;
-    }
-    .menu-grid-cover img {
-        height: 372px;
-    }
-}
+
 @media (max-width: 567px) {
     .header {
         padding-top: 19px;
@@ -742,7 +740,8 @@ header {
         gap: 20px;
     }
     .menu-other .menu-grid {
-        padding-bottom: 24vw; 
+        padding-bottom: 24vw;
+        padding-right: 15px; 
     }
     .menu-other .menu-grid-cover {
         height: 54vw;
