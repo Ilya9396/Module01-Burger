@@ -659,6 +659,7 @@ header {
     }
     .menu-other .menu-grid-item {
         flex: 0 0 281px;
+        padding-right: 15px; 
     }
     .menu-other .menu-grid-cover,
     .menu-other .menu-grid-cover img {
@@ -690,6 +691,9 @@ header {
     }
     .menu-other .container {
         padding-right: 0;
+    }
+    .menu-other .menu-grid {
+        padding-right: 15px;
     }
     
    
@@ -741,7 +745,7 @@ header {
     }
     .menu-other .menu-grid {
         padding-bottom: 24vw;
-        padding-right: 15px; 
+        
     }
     .menu-other .menu-grid-cover {
         height: 54vw;
